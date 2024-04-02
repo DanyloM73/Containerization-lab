@@ -1,4 +1,4 @@
-FROM python:3.10-debian
+FROM python:3.10-bullseye
 WORKDIR /project
 COPY requirements requirements
 RUN python3 -m venv ./.venv
