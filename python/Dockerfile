@@ -2,7 +2,7 @@ FROM python:3.10-bullseye
 WORKDIR /project
 COPY requirements requirements
 RUN python3 -m venv ./.venv
-RUN source ./.venv/bin/activate
+RUN . ./.venv/bin/activate
 RUN pip install -r requirements/lock.txt
 COPY build build
 COPY spaceship spaceship
