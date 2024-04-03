@@ -7,6 +7,6 @@ RUN go build -o build/fizzbuzz
 
 FROM scratch
 WORKDIR /project
-COPY --from=builder /project/templates template
-COPY --from=builder /project/build/fizzbuzz fizzbuzz
+COPY --from=builder /project/templates ./template
+COPY --from=builder /project/build/fizzbuzz ./fizzbuzz
 CMD ["./fizzbuzz", "serve"]
