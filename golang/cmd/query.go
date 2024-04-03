@@ -1,11 +1,14 @@
+// THIS FILE IS POTENTIALLY NOT NEEDED TO START THE PROJECT
+
 package cmd
 
 import (
 	"fizzbuzz/lib"
 	"fmt"
-	"github.com/spf13/cobra"
 	"os"
 	"strconv"
+
+	"github.com/spf13/cobra"
 )
 
 // queryCmd represents the query command
